@@ -14,7 +14,7 @@ import {
 } from '@mui/material';
 import { Link } from 'react-router-dom';
 
-function Home(props) {
+function Home() {
   const [postList, setPostList] = useState([]);
   const [postCount, setPostCount] = useState(0);
   const [controller, setController] = useState({

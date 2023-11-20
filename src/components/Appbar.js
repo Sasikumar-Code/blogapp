@@ -25,7 +25,7 @@ const Appbar = () => {
             sx={{ mr: 2 }}
           ></IconButton>
           <Typography variant="h6" color="inherit" component="div">
-            Blog App
+            SK Blog App
           </Typography>
         </Toolbar>
       </AppBar>
