@@ -11,6 +11,7 @@ import {
   TableRow,
   TableCell,
   TablePagination,
+  Button,
 } from '@mui/material';
 import { Link } from 'react-router-dom';
 
@@ -84,9 +85,16 @@ function Home() {
                   <TableCell>
                     <Link
                       to={`/post/${data.id}`}
-                      style={{ textDecoration: 'none', color: 'green' }}
+                      style={{ textDecoration: 'none' }}
                     >
-                      View Post
+                      <Button
+                        style={{
+                          backgroundColor: 'ButtonFace',
+                          color: 'green',
+                        }}
+                      >
+                        View Post
+                      </Button>
                     </Link>
                   </TableCell>
                 </TableRow>
