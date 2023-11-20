@@ -56,19 +56,38 @@ function Home() {
         <Table>
           <TableHead>
             <TableRow>
-              <TableCell><h1>ID</h1></TableCell>
-              <TableCell><h1>Title</h1></TableCell>
-              <TableCell><h1>View</h1></TableCell>
+              <TableCell>
+                <h1>ID</h1>
+              </TableCell>
+              <TableCell>
+                <h1>Title</h1>
+              </TableCell>
+              <TableCell>
+                <h1>View</h1>
+              </TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
             {postList.map((data) => {
               return (
                 <TableRow>
-                  <TableCell>{data.id}</TableCell>
+                  <TableCell>
+                    {' '}
+                    <Link
+                      to={`/post/${data.id}`}
+                      style={{ textDecoration: 'none', color: 'black' }}
+                    >
+                      {data.id}
+                    </Link>
+                  </TableCell>
                   <TableCell>{data.title}</TableCell>
                   <TableCell>
-                    <Link to={`/post/${data.id}`}>View Post</Link>
+                    <Link
+                      to={`/post/${data.id}`}
+                      style={{ textDecoration: 'none', color: 'green' }}
+                    >
+                      View Post
+                    </Link>
                   </TableCell>
                 </TableRow>
               );

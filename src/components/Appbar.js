@@ -7,6 +7,7 @@ import { useSelector } from 'react-redux';
 import { AppBar, IconButton, Toolbar, Typography } from '@mui/material';
 import FavoriteBorderTwoToneIcon from '@mui/icons-material/FavoriteBorderTwoTone';
 import Badge from '@mui/material/Badge';
+import Newpost from './Newpost';
 
 const Appbar = () => {
   const Items = useSelector((state) => state.favor);
@@ -29,6 +30,7 @@ const Appbar = () => {
           </Typography>
         </Toolbar>
       </AppBar>
+      <Newpost />
       <Link to={'/favorite'}>
         <IconButton
           sx={{ float: 'right', marginTop: '-43px', marginRight: '20px' }}
