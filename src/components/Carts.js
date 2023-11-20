@@ -1,5 +1,5 @@
 /** @format */
-import React, { useEffect } from 'react';
+import React from 'react';
 import { useSelector } from 'react-redux';
 import {
   Card,
@@ -12,9 +12,7 @@ import {
 
 const Carts = () => {
   const Items = useSelector((state) => state.favor);
-  useEffect(() => {
-    console.log(Items);
-  });
+
   return (
     <div>
       <h1>Favorite List</h1>
